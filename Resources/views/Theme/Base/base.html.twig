@@ -1,0 +1,199 @@
+{% extends base_template %}
+
+{% block body %}
+    <div id="background">
+        <div id="twitter">
+            {% block feedback_box %}
+                {# BEGIN-SLOT
+                    name: feedback_box
+                    repeated: language
+                    htmlContent: |
+                        <a href="https://twitter.com/alphalemon"> </a>
+                END-SLOT #}
+                {{ renderSlot('feedback_box') }}
+            {% endblock %}            
+        </div>
+        <div id="header" class="container_16">
+            <div  class="grid_7">
+                <div id="logo">
+                    {% block logo %}
+                        {# BEGIN-SLOT
+                            name: logo
+                            repeated: site
+                            htmlContent: |
+                                <h1>Company Name</h1>
+                        END-SLOT #}
+                        {{ renderSlot('logo') }}
+                    {% endblock %}
+                </div>
+            </div>
+            <div class="grid_9">
+                <div id="search_box" class="float_right">
+                {% block search_box %}
+                    {# BEGIN-SLOT
+                        name: search_box
+                        repeated: language
+                        htmlContent: |
+                            Search <input type="text" value="type here your text" /><button/>Search</button>
+                    END-SLOT #}
+                    {{ renderSlot('search_box') }}
+                {% endblock %}
+                </div>
+                <div class="clear"></div>
+                <div id="nav_menu" class="float_right">
+                    {% block nav_menu %}
+                        {# BEGIN-SLOT
+                            name: nav_menu
+                            repeated: language
+                            htmlContent: |
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li> 
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                        END-SLOT #}
+                        {{ renderSlot('nav_menu') }}
+                    {% endblock %}
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="container" class="container_16">     
+            <div id="content" class="container_16">
+                <div id="internal_header">
+                    <div id="header_left_bg"></div>
+                    <div id="header_middle_bg"></div>
+                    <div id="header_right_bg"></div>
+                    <div id="screenshots_box" class="grid_8" >
+                        {% block screenshots_box %}
+                            {# BEGIN-SLOT
+                                name: screenshots_box
+                                repeated: language
+                                htmlContent: |
+                                    <img src="/bundles/sunshinetheme/css/images/screenshot.png" />
+                            END-SLOT #}
+                            {{ renderSlot('screenshots_box') }}
+                        {% endblock %}
+                    </div>
+                    <div id="header_right" class="grid_8 omega">
+                        <div id="slogan_title">                            
+                            {% block slogan_title %}
+                                {# BEGIN-SLOT
+                                    name: slogan_title
+                                    repeated: language
+                                    htmlContent: |
+                                        <h1>My awesome company</h1>
+                                END-SLOT #}  
+                                {{ renderSlot('slogan_title') }}
+                            {% endblock %}
+                        </div>
+                        <div id="slogan_box">
+                            {% block slogan_box %}
+                                {# BEGIN-SLOT
+                                    name: slogan_box
+                                    repeated: language
+                                    htmlContent: |
+                                        Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.
+                                END-SLOT #}   
+                                {{ renderSlot('slogan_box') }}
+                            {% endblock %}
+                        </div>
+                        <div id="download">
+                            {% block download_box %}
+                                {# BEGIN-SLOT
+                                    name: download_box
+                                    repeated: language
+                                    htmlContent: |
+                                        <img src="/bundles/sunshinetheme/css/images/download.png" />
+                                END-SLOT #}
+                                {{ renderSlot('download_box') }}
+                            {% endblock %}
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="sidebar" class="grid_16">
+                    {% block contents %}{% endblock %}
+                </div>
+
+                <div class="clear"></div>
+            </div>
+            <div id="footer" class="container_16">
+                <div id="links_footer_1" class="grid_6 ">
+                    {% block nav_menu_2 %}
+                        {# BEGIN-SLOT
+                            name: nav_menu_2
+                            repeated: language
+                            htmlContent: |
+                                <h2>Navigation</h2>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li> 
+                                    <li><a href="#">Link 3</a></li>
+                                </ul>
+                        END-SLOT #}
+                        {{ renderSlot('nav_menu_2') }}
+                    {% endblock %}
+                </div>
+
+                <div id="links_footer_2" class="grid_5 ">
+                    {% block nav_menu_3 %}
+                        {# BEGIN-SLOT
+                            name: nav_menu_3
+                            repeated: language
+                            htmlContent: |
+                                <h2>Friends</h2>
+                                <ul>
+                                    <li><a href="#">Link 1</a></li>
+                                    <li><a href="#">Link 2</a></li> 
+                                    <li><a href="#">Link 3</a></li>
+                                </ul>
+                        END-SLOT #}
+                        {{ renderSlot('nav_menu_3') }}
+                    {% endblock %}
+                </div>
+                <div id="social_box" class="grid_5 ">
+                    {% block social_box %}
+                        {# BEGIN-SLOT
+                            name: social_box
+                            repeated: language
+                            htmlContent: |
+                                <h2>Social</h2>
+                                <ul>
+                                    <li><a href="#">Twitter</a></li>
+                                    <li><a href="#">Facebook</a></li> 
+                                    <li><a href="#">Linked-in</a></li>
+                                </ul>
+                        END-SLOT #}
+                        {{ renderSlot('social_box') }}
+                    {% endblock %}
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="information">
+            <div id="copyright_box" class="container_16">
+                {% block copyright_box %}
+                    {# BEGIN-SLOT
+                        name: copyright_box
+                        repeated: site
+                        htmlContent: |
+                            Copyright 2012 myCompany
+                    END-SLOT #}
+                    {{ renderSlot('copyright_box') }}
+                {% endblock %}
+            </div>
+            <div id="stats_box" class="container_16">
+                {% block stats_box %}
+                    {# BEGIN-SLOT
+                        name: stats_box
+                        repeated: site
+                        htmlContent: |
+                            Stats box
+                    END-SLOT #}
+                    {{ renderSlot('stats_box') }}
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

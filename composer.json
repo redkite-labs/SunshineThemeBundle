@@ -1,0 +1,18 @@
+{
+    "name": "alphalemon/app-sunshine-theme-bundle",
+    "description": "An awesome AlphaLemon CMS app theme",
+    "keywords": ["alphalemon", "cms", "app"],
+    "homepage": "http://alphalemon.com",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [{
+      "name": "AlphaLemon",
+      "email": "info@alphalemon.com"
+    }],
+    "autoload": {
+        "psr-0": { "AlphaLemon\\Theme\\SunshineThemeBundle": ""
+        }
+    },
+    "target-dir" : "AlphaLemon/Theme/SunshineThemeBundle",
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,71 @@
+$slogan-shadow-color: #000
+
+#internal_header
+  position: relative
+  height: 298px
+  margin-left: 10px
+  text-align: center
+  margin-bottom: $sectionBottomMargin
+  color: #FFF
+
+#header_left_bg
+  top: 0
+  left: 0
+  width: 72px
+  height: 298px
+  position: absolute
+  background: transparent url(images/header-left.png) 0px 0 no-repeat
+
+#header_middle_bg
+  top: 0
+  left: 72px
+  width: 796px
+  height: 298px
+  position: absolute
+  background: transparent url(images/header-middle.png) 0 0 repeat-x
+
+#header_right_bg
+  top: 0
+  left: 868px
+  width: 72px
+  height: 298px
+  position: absolute
+  background: transparent url(images/header-right.png) 0px 0 no-repeat
+
+#screenshots_box, #header_right
+  position: relative
+
+#screenshots_box
+  top: 10px
+  background: transparent url(images/mask.png) 0px 0 no-repeat
+  //+setupImage($maskUrl, "mask")
+  
+  img
+    margin-top: 6px
+
+#screenshots
+  width: 446px
+  height: 256px
+  position: absolute
+  top: 7px
+  left: 7px
+
+#slogan_title
+  margin-top: 33px
+
+  h1
+    font: normal 40px/42px Impact, Arial, Helvetica, sans-serif
+    +text-shadow(rgba($slogan-shadow-color, .2) 1px 1px 0, rgba($slogan-shadow-color, .2) 2px 2px 0, rgba($slogan-shadow-color, .2) 2px 2px 0)
+
+#slogan_box
+  font: italic 14px / 16px Trebuchet MS, Arial, Helvetica, sans-serif
+  padding: 10px 20px
+
+#download
+  margin-top: 10px
+
+#internal_header_box_1
+  border-bottom: 2px solid #fff
+  margin-top: 20px
+  padding: 2px 0
+  text-align: left

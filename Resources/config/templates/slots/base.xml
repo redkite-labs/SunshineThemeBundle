@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="sunshine_theme.theme.template.base.slots.feedback_box" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">feedback_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<a href="https://twitter.com/alphalemon"></a>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.base.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.base.slots.logo" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">logo</argument>
+            <argument type="collection" >
+                <argument key="repeated">site</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<h1>Company Name</h1>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.base.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.base.slots.search_box" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">search_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[Search <input type="text" value="type here your text" /><button/>Search</button>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.base.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.base.slots.nav_menu" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">nav_menu</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<ul><li><a href="#">Home</a></li><li><a href="#">About</a></li><li><a href="#">Contacts</a></li></ul>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.base.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.base.slots.screenshots_box" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">screenshots_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<img src="/bundles/sunshinetheme/css/images/screenshot.png" />]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.base.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.base.slots.slogan_title" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">slogan_title</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<h1>My awesome company</h1>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.base.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.base.slots.slogan_box" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">slogan_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.base.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.base.slots.download_box" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">download_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<img src="/bundles/sunshinetheme/css/images/download.png" />]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.base.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.base.slots.nav_menu_2" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">nav_menu_2</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<h2>Navigation</h2><ul><li><a href="#">Link 1</a></li><li><a href="#">Link 2</a></li><li><a href="#">Link 3</a></li></ul>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.base.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.base.slots.nav_menu_3" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">nav_menu_3</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<h2>Friends</h2><ul><li><a href="#">Link 1</a></li><li><a href="#">Link 2</a></li><li><a href="#">Link 3</a></li></ul>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.base.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.base.slots.social_box" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">social_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<h2>Social</h2><ul><li><a href="#">Twitter</a></li><li><a href="#">Facebook</a></li><li><a href="#">Linked-in</a></li></ul>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.base.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.base.slots.copyright_box" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">copyright_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">site</argument>
+                <argument key="htmlContent">
+                    <![CDATA[Copyright 2012 myCompany]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.base.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.base.slots.stats_box" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">stats_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">site</argument>
+                <argument key="htmlContent">
+                    <![CDATA[Stats box]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.base.slots" />
+        </service>
+    </services>
+</container>

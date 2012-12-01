@@ -1,0 +1,42 @@
+$logo-shadow-color: #000
+$header-color: #fff
+
+#header
+  height: 130px
+  font-weight: bold
+  color: $header-color
+  font: normal 16px / 18px Trebuchet MS, Arial, Helvetica, sans-serif
+
+#logo
+  margin-top: 10px
+  
+  h1
+    font: normal 46px/48px Impact, Arial, Helvetica, sans-serif
+    +text-shadow(rgba($logo-shadow-color, .2) 1px 1px 0, rgba($logo-shadow-color, .2) 2px 2px 0, rgba($logo-shadow-color, .2) 2px 2px 0)
+    margin-top: 50px
+
+#search_box
+  padding: $generalPadding
+  margin-top: 30px
+  font-size: bold
+
+  input
+    padding: 4px
+    color: #525252
+
+  button
+    padding: 3px
+    
+
+#nav_menu
+  +horizontal-list(4px)
+  padding: $generalPadding
+  margin-top: 26px
+
+  a
+    font: bold 20px / 22px Trebuchet MS, Arial, Helvetica, sans-serif
+    color: $header-color
+    margin-bottom: 10px
+
+  a:hover
+    color: #FF9900

@@ -1,0 +1,80 @@
+header:
+  0:
+    HtmlContent: |
+      <h1>Header</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ligula et purus auctor lobortis. Vivamus tempor, quam vitae mollis imperdiet, ligula ante pretium purus, non consequat justo massa at ante. Nam mattis fermentum lobortis. Phasellus viverra sem nibh.</p>
+main_sidebar:
+  0:
+    HtmlContent: |
+      <h1>Main sidebar</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ligula et purus auctor lobortis. Vivamus tempor, quam vitae mollis imperdiet, ligula ante pretium purus, non consequat justo massa at ante. Nam mattis fermentum lobortis. Phasellus viverra sem nibh.</p>
+content:
+  0:
+    HtmlContent: |
+      <h1>Content</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ligula et purus auctor lobortis. Vivamus tempor, quam vitae mollis imperdiet, ligula ante pretium purus, non consequat justo massa at ante. Nam mattis fermentum lobortis. Phasellus viverra sem nibh.</p>
+secondary_sidebar:
+  0:
+    HtmlContent: |
+      <h1>Secondary sidebar</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ligula et purus auctor lobortis. Vivamus tempor, quam vitae mollis imperdiet, ligula ante pretium purus, non consequat justo massa at ante. Nam mattis fermentum lobortis. Phasellus viverra sem nibh.</p>
+footer:
+  0:
+    HtmlContent: |
+      <h1>Footer</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ligula et purus auctor lobortis. Vivamus tempor, quam vitae mollis imperdiet, ligula ante pretium purus, non consequat justo massa at ante. Nam mattis fermentum lobortis. Phasellus viverra sem nibh.</p>
+logo:
+  0:
+    HtmlContent: |
+      <h1>Logo</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+main_menu:
+  0:
+    HtmlContent: |
+      <h1>Main menu</h1>
+second_menu:
+  0:
+    HtmlContent: |
+      <h1>Second menu</h1>
+friends_box:
+  0:
+    HtmlContent: |
+      <h1>Friends box</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ligula et purus auctor lobortis. Vivamus tempor, quam vitae mollis imperdiet, ligula ante pretium purus, non consequat justo massa at ante. Nam mattis fermentum lobortis. Phasellus viverra sem nibh.</p>
+search_box:
+  0:
+    HtmlContent: |
+      <h1>Search box</h1>
+slogan_box:
+  0:
+    HtmlContent: |
+      <h1>Slogan_box</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ligula et purus auctor lobortis. Vivamus tempor, quam vitae mollis imperdiet, ligula ante pretium purus, non consequat justo massa at ante. Nam mattis fermentum lobortis. Phasellus viverra sem nibh.</p>
+copyright_box:
+  0:
+    HtmlContent: |
+      <h1>Copyright box</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ligula et purus auctor lobortis. Vivamus tempor, quam vitae mollis imperdiet, ligula ante pretium purus, non consequat justo massa at ante. Nam mattis fermentum lobortis. Phasellus viverra sem nibh.</p>
+rss_box:
+  0:
+    HtmlContent: |
+      <h1>Rss box</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ligula et purus auctor lobortis. Vivamus tempor, quam vitae mollis imperdiet, ligula ante pretium purus, non consequat justo massa at ante. Nam mattis fermentum lobortis. Phasellus viverra sem nibh.</p>
+sponsor_box:
+  0:
+    HtmlContent: |
+      <h1>Sponsor box</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ligula et purus auctor lobortis. Vivamus tempor, quam vitae mollis imperdiet, ligula ante pretium purus, non consequat justo massa at ante. Nam mattis fermentum lobortis. Phasellus viverra sem nibh.</p>
+social_box:
+  0:
+    HtmlContent: |
+      <h1>Social box</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae ligula et purus auctor lobortis. Vivamus tempor, quam vitae mollis imperdiet, ligula ante pretium purus, non consequat justo massa at ante. Nam mattis fermentum lobortis. Phasellus viverra sem nibh.</p>
+third_menu:
+  0:
+    HtmlContent: |
+      <h1>Third menu</h1>
+fourth_menu:
+  0:
+    HtmlContent: |
+      <h1>Fourth menu</h1>

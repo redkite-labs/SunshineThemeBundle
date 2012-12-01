@@ -1,0 +1,7 @@
+{
+    "bundles" : {
+        "AlphaLemon\\Theme\\SunshineThemeBundle\\SunshineThemeBundle" : {
+            "environments" : ["all"]
+        }
+    }
+}

@@ -1,0 +1,62 @@
+{% extends 'SunshineThemeBundle:Theme:Base/base.html.twig' %}
+
+{# BEGIN-EXTERNAL-STYLESHEETS
+@SunshineThemeBundle/Resources/public/css/reset.css
+@SunshineThemeBundle/Resources/public/css/960.css
+@SunshineThemeBundle/Resources/public/css/text.css
+@SunshineThemeBundle/Resources/public/css/screen.css
+END-EXTERNAL-STYLESHEETS #}
+
+{# BEGIN-EXTERNAL-JAVASCRIPTS
+@AlphaLemonThemeEngineBundle/Resources/public/js/vendor/jquery/*
+@SunshineThemeBundle/Resources/public/js/mb.bgndGallery.js
+END-EXTERNAL-JAVASCRIPTS #}
+
+{% block contents %}
+    <div id="column_1" class="grid_5 alpha">
+        <div id="left_sidebar">
+            {% block left_sidebar %}
+                {# BEGIN-SLOT
+                    name: left_sidebar
+                    htmlContent: |
+                        <h1>Title 1</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
+                END-SLOT #}
+                {{ renderSlot('left_sidebar') }}
+            {% endblock %}
+            {% block right_sidebar %}
+                {# BEGIN-SLOT
+                    name: right_sidebar
+                    htmlContent: |
+                        <h1>Title 2</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
+                END-SLOT #}
+                {{ renderSlot('right_sidebar') }}
+            {% endblock %}
+        </div>
+    </div>
+    <div id="column_2" class="grid_11 omega">
+        <div id="right_sidebar">
+            {% block screencast_sidebar %}
+                {# BEGIN-SLOT
+                    name: screencast_sidebar
+                    htmlContent: |
+                        <h1>Main Title</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h2>Secondary Title</h2>
+                        <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisici elit</a>, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
+                        <h3>Paragraph Title</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
+                            <ul>                                
+                                <li><a href="#">Link 1</a></li> 
+                                <li>No link</li>
+                                <li><a href="#">Link 2</a></li>
+                            </ul>
+                        </p>
+                END-SLOT #}
+                {{ renderSlot('screencast_sidebar') }}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

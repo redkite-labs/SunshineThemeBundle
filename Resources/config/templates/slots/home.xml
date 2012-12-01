@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="sunshine_theme.theme.template.home.slots.left_sidebar" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">left_sidebar</argument>
+            <argument type="collection" >
+                <argument key="htmlContent">
+                    <![CDATA[<h1>Title 1</h1><p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.home.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.right_sidebar" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">right_sidebar</argument>
+            <argument type="collection" >
+                <argument key="htmlContent">
+                    <![CDATA[<h1>Title 2</h1><p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.home.slots" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.screencast_sidebar" class="%alpha_lemon_theme_engine.slot.class%">
+            <argument type="string">screencast_sidebar</argument>
+            <argument type="collection" >
+                <argument key="htmlContent">
+                    <![CDATA[<h1>Main Title</h1><p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h2>Secondary Title</h2><p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisici elit</a>, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p><h3>Paragraph Title</h3><p>
+    Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
+    <ul><li><a href="#">Link 1</a></li><li>No link</li><li><a href="#">Link 2</a></li></ul></p>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.home.slots" />
+        </service>
+    </services>
+</container>

@@ -1,0 +1,399 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*@import "compass/reset";
+ *@import "compass/css3/border-radius";
+ *
+ *@import "compass/typography/lists/horizontal-list";
+ *@import "compass/utilities/general/float";
+ *@import "compass/css3/inline-block";
+ *@import "compass/typography/links/unstyled-link";
+ *@import "compass/typography/links/hover-link";
+ *@import "compass/typography/links/link-colors"; */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+.float_left {
+  display: inline;
+  float: left;
+}
+
+.float_right {
+  display: inline;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+img {
+  border: 0px;
+}
+
+body {
+  background: #81b1bd url(images/bg.jpg) repeat-x;
+  color: white;
+  font: 1em/1.2em Arial, Helvetica, sans-serif;
+}
+body a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  text-decoration: none;
+  color: #d76b00;
+  cursor: pointer;
+}
+body a:active, body a:focus {
+  outline: none;
+}
+body a:hover {
+  text-decoration: underline;
+}
+body a:hover {
+  color: #ff9900;
+}
+body a:active {
+  color: #d76b00;
+}
+
+#background {
+  width: 100%;
+  background: transparent url(images/bg_vector.jpg) top center no-repeat;
+}
+
+#twitter {
+  position: fixed;
+  top: 200px;
+  left: 0;
+  width: 50px;
+  height: 186px;
+  background: transparent url(images/twitter.png) top left no-repeat;
+}
+
+#twitter a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  height: 130px;
+  font-weight: bold;
+  color: white;
+  font: normal 16px/18px Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+
+#logo {
+  margin-top: 10px;
+}
+#logo h1 {
+  font: normal 46px/48px Impact, Arial, Helvetica, sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0, rgba(0, 0, 0, 0.2) 2px 2px 0, rgba(0, 0, 0, 0.2) 2px 2px 0;
+  margin-top: 50px;
+}
+
+#search_box {
+  padding: 4px;
+  margin-top: 30px;
+  font-size: bold;
+}
+#search_box input {
+  padding: 4px;
+  color: #525252;
+}
+#search_box button {
+  padding: 3px;
+}
+
+#nav_menu {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  padding: 4px;
+  margin-top: 26px;
+}
+#nav_menu li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  display: inline;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+#nav_menu li:first-child, #nav_menu li.first {
+  padding-left: 0;
+}
+#nav_menu li:last-child {
+  padding-right: 0;
+}
+#nav_menu li.last {
+  padding-right: 0;
+}
+#nav_menu a {
+  font: bold 20px/22px Trebuchet MS, Arial, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+#nav_menu a:hover {
+  color: #ff9900;
+}
+
+#content {
+  min-height: 20px;
+  display: block;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+  padding-top: 8px;
+  color: #525252;
+  background-color: white;
+  border-bottom: 1px solid #282828;
+}
+#content a {
+  color: #d76b00;
+}
+#content b, #content strong {
+  font-weight: bold;
+}
+#content em {
+  font-style: italic;
+}
+#content li {
+  margin-left: 30px;
+}
+#content ol {
+  list-style: decimal;
+}
+
+#internal_header {
+  position: relative;
+  height: 298px;
+  margin-left: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#header_left_bg {
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 298px;
+  position: absolute;
+  background: transparent url(images/header-left.png) 0px 0 no-repeat;
+}
+
+#header_middle_bg {
+  top: 0;
+  left: 72px;
+  width: 796px;
+  height: 298px;
+  position: absolute;
+  background: transparent url(images/header-middle.png) 0 0 repeat-x;
+}
+
+#header_right_bg {
+  top: 0;
+  left: 868px;
+  width: 72px;
+  height: 298px;
+  position: absolute;
+  background: transparent url(images/header-right.png) 0px 0 no-repeat;
+}
+
+#screenshots_box, #header_right {
+  position: relative;
+}
+
+#screenshots_box {
+  top: 10px;
+  background: transparent url(images/mask.png) 0px 0 no-repeat;
+}
+#screenshots_box img {
+  margin-top: 6px;
+}
+
+#screenshots {
+  width: 446px;
+  height: 256px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+#slogan_title {
+  margin-top: 33px;
+}
+#slogan_title h1 {
+  font: normal 40px/42px Impact, Arial, Helvetica, sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 1px 0, rgba(0, 0, 0, 0.2) 2px 2px 0, rgba(0, 0, 0, 0.2) 2px 2px 0;
+}
+
+#slogan_box {
+  font: italic 14px/16px Trebuchet MS, Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+}
+
+#download {
+  margin-top: 10px;
+}
+
+#internal_header_box_1 {
+  border-bottom: 2px solid white;
+  margin-top: 20px;
+  padding: 2px 0;
+  text-align: left;
+}
+
+#sidebar {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+#sidebar p {
+  margin-bottom: 10px;
+}
+#sidebar a {
+  color: #d29500;
+}
+#sidebar a:hover {
+  color: #c20000;
+}
+#sidebar a:active {
+  color: #d76b00;
+}
+#sidebar h1 {
+  color: #c34300;
+  font-size: 28px;
+}
+#sidebar h2 {
+  color: #c45300;
+  font-size: 24px;
+}
+#sidebar h3 {
+  color: #e2a500;
+  font-size: 20px;
+}
+
+#left_sidebar, #right_sidebar {
+  padding: 4px;
+}
+
+#footer {
+  min-height: 200px;
+  background: #728330 url(images/footer.jpg) repeat-x;
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  -ms-border-radius: 0 0 20px 20px;
+  -o-border-radius: 0 0 20px 20px;
+  border-radius: 0 0 20px 20px;
+  color: black;
+  border-top: 1px solid white;
+  padding-top: 10px;
+}
+#footer a {
+  font-size: 16px;
+  color: white;
+}
+#footer a:hover {
+  color: yellow;
+}
+#footer a:active {
+  color: #d76b00;
+}
+#footer h2 {
+  font-size: 20px;
+  color: white;
+}
+#footer ul li {
+  margin: 4px 0;
+}
+
+#links_footer_1, #links_footer_2, #social_box {
+  margin-top: 14px;
+}
+
+#alcopyright_box {
+  text-align: center;
+  margin-top: 14px;
+}
+
+#alcopyright_box a {
+  font: bold 12px/14px Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+
+#information {
+  text-align: center;
+  font-size: 12px;
+  color: #333333;
+}
+
+#copyright_box {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
