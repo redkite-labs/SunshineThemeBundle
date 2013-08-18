@@ -2,7 +2,7 @@
     "name": "redkite-cms/sunshine-theme-bundle",
     "description": "An awesome RedKiteCms CMS app theme",
     "keywords": ["redkite", "cms", "app"],
-    "homepage": "http://alphalemon.com",
+    "homepage": "http://redkite-labs.com",
     "type": "redkite-cms-app",
     "license": "MIT",
     "authors": [
