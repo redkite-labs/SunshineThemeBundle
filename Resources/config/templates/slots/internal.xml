@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="sunshine_theme.theme.template.internal.slots.box_title_1" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="sunshine_theme.theme.template.internal.slots.box_title_1" class="%red_kite_labs_theme_engine.slot.class%">
             <argument type="string">box_title_1</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -14,7 +14,7 @@
             </argument>
             <tag name="sunshine_theme.theme.template.internal.slots" />
         </service>
-        <service id="sunshine_theme.theme.template.internal.slots.nav_menu_4" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="sunshine_theme.theme.template.internal.slots.nav_menu_4" class="%red_kite_labs_theme_engine.slot.class%">
             <argument type="string">nav_menu_4</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -24,7 +24,7 @@
             </argument>
             <tag name="sunshine_theme.theme.template.internal.slots" />
         </service>
-        <service id="sunshine_theme.theme.template.internal.slots.box_title_2" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="sunshine_theme.theme.template.internal.slots.box_title_2" class="%red_kite_labs_theme_engine.slot.class%">
             <argument type="string">box_title_2</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -34,7 +34,7 @@
             </argument>
             <tag name="sunshine_theme.theme.template.internal.slots" />
         </service>
-        <service id="sunshine_theme.theme.template.internal.slots.friends_box" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="sunshine_theme.theme.template.internal.slots.friends_box" class="%red_kite_labs_theme_engine.slot.class%">
             <argument type="string">friends_box</argument>
             <argument type="collection" >
                 <argument key="repeated">language</argument>
@@ -44,7 +44,7 @@
             </argument>
             <tag name="sunshine_theme.theme.template.internal.slots" />
         </service>
-        <service id="sunshine_theme.theme.template.internal.slots.middle_sidebar" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="sunshine_theme.theme.template.internal.slots.middle_sidebar" class="%red_kite_labs_theme_engine.slot.class%">
             <argument type="string">middle_sidebar</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -55,7 +55,7 @@
             </argument>
             <tag name="sunshine_theme.theme.template.internal.slots" />
         </service>
-        <service id="sunshine_theme.theme.template.internal.slots.ads_box" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="sunshine_theme.theme.template.internal.slots.ads_box" class="%red_kite_labs_theme_engine.slot.class%">
             <argument type="string">ads_box</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -64,7 +64,7 @@
             </argument>
             <tag name="sunshine_theme.theme.template.internal.slots" />
         </service>
-        <service id="sunshine_theme.theme.template.internal.slots.tweets_box" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="sunshine_theme.theme.template.internal.slots.tweets_box" class="%red_kite_labs_theme_engine.slot.class%">
             <argument type="string">tweets_box</argument>
             <argument type="collection" >
                 <argument key="htmlContent">

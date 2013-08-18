@@ -11,7 +11,7 @@
             <parameter>@SunshineThemeBundle/Resources/public/css/internal.css</parameter>
         </parameter>
         <parameter key="sunshine_theme.internal.external_javascripts" type="collection">
-            <parameter>@AlphaLemonThemeEngineBundle/Resources/public/js/vendor/jquery/*</parameter>
+            <parameter>@RedKiteLabsThemeEngineBundle/Resources/public/js/vendor/jquery/*</parameter>
             <parameter>@SunshineThemeBundle/Resources/public/js/mb.bgndGallery.js</parameter>
         </parameter>
         <parameter key="sunshine_theme.internal.external_stylesheets.cms" type="collection">
@@ -19,7 +19,7 @@
     </parameters>
 
     <services>
-        <service id="sunshine_theme.theme.template_assets.internal" class="%alpha_lemon_theme_engine.template_assets.class%">
+        <service id="sunshine_theme.theme.template_assets.internal" class="%red_kite_labs_theme_engine.template_assets.class%">
             <call method="setExternalStylesheets">
                 <argument>%sunshine_theme.internal.external_stylesheets%</argument>
             </call>
@@ -28,11 +28,11 @@
             </call>
         </service>
 
-        <service id="sunshine_theme.theme.template.internal.slots" class="%alpha_lemon_theme_engine.template_slots.class%">
+        <service id="sunshine_theme.theme.template.internal.slots" class="%red_kite_labs_theme_engine.template_slots.class%">
             <tag name="sunshine_theme.theme.template.internal" />
         </service>
 
-        <service id="sunshine_theme.theme.template.internal" class="%alpha_lemon_theme_engine.template.class%">
+        <service id="sunshine_theme.theme.template.internal" class="%red_kite_labs_theme_engine.template.class%">
             <argument type="service" id="kernel" />
             <argument type="service" id="sunshine_theme.theme.template_assets.internal" />
             <argument type="service" id="sunshine_theme.theme.template.internal.slots" />

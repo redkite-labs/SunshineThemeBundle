@@ -1,6 +1,6 @@
 {
     "bundles" : {
-        "AlphaLemon\\Theme\\SunshineThemeBundle\\SunshineThemeBundle" : {
+        "RedKiteCms\\Theme\\SunshineThemeBundle\\SunshineThemeBundle" : {
             "environments" : ["all"]
         }
     }

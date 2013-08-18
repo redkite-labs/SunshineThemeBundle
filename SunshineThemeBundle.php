@@ -1,6 +1,6 @@
 <?php
 
-namespace AlphaLemon\Theme\SunshineThemeBundle;
+namespace RedKiteCms\Theme\SunshineThemeBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

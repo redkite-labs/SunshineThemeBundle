@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="sunshine_theme.theme.template.home.slots.left_sidebar" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="sunshine_theme.theme.template.home.slots.left_sidebar" class="%red_kite_labs_theme_engine.slot.class%">
             <argument type="string">left_sidebar</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -13,7 +13,7 @@
             </argument>
             <tag name="sunshine_theme.theme.template.home.slots" />
         </service>
-        <service id="sunshine_theme.theme.template.home.slots.right_sidebar" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="sunshine_theme.theme.template.home.slots.right_sidebar" class="%red_kite_labs_theme_engine.slot.class%">
             <argument type="string">right_sidebar</argument>
             <argument type="collection" >
                 <argument key="htmlContent">
@@ -22,7 +22,7 @@
             </argument>
             <tag name="sunshine_theme.theme.template.home.slots" />
         </service>
-        <service id="sunshine_theme.theme.template.home.slots.screencast_sidebar" class="%alpha_lemon_theme_engine.slot.class%">
+        <service id="sunshine_theme.theme.template.home.slots.screencast_sidebar" class="%red_kite_labs_theme_engine.slot.class%">
             <argument type="string">screencast_sidebar</argument>
             <argument type="collection" >
                 <argument key="htmlContent">

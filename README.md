@@ -1,12 +1,12 @@
-Add the Sunshine Theme-Block to AlphaLemon CMS
+Add the Sunshine Theme-Block to RedKiteCms CMS
 ==============================================
 
-This is the theme used on AlphaLemon CMS website since late 2012.
+This is the theme used on RedKiteCms CMS website since late 2012.
 
 Installation
 ------------
 
-You can add the **Sunshine Theme-Block** to the application managed by AlphaLemon 
+You can add the **Sunshine Theme-Block** to the application managed by RedKiteCms 
 CMS, adding it to the **composer.json** of your Symfony2 application:
 
 .. code-block:: text
@@ -41,7 +41,7 @@ then run the composer's update command:
 
     php composer.phar update alphalemon/app-sunshine-theme-bundle
 
-To have the new theme available in the AlphaLemon CMS' add blocks menu, you have to 
+To have the new theme available in the RedKiteCms CMS' add blocks menu, you have to 
 clear the cache as follows:
 
 .. code-block:: text

@@ -1,18 +1,18 @@
 {
     "name": "alphalemon/app-sunshine-theme-bundle",
-    "description": "An awesome AlphaLemon CMS app theme",
+    "description": "An awesome RedKiteCms CMS app theme",
     "keywords": ["alphalemon", "cms", "app"],
     "homepage": "http://alphalemon.com",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [{
-      "name": "AlphaLemon",
+      "name": "RedKiteCms",
       "email": "info@alphalemon.com"
     }],
     "autoload": {
-        "psr-0": { "AlphaLemon\\Theme\\SunshineThemeBundle": ""
+        "psr-0": { "RedKiteCms\\Theme\\SunshineThemeBundle": ""
         }
     },
-    "target-dir" : "AlphaLemon/Theme/SunshineThemeBundle",
+    "target-dir" : "RedKiteCms/Theme/SunshineThemeBundle",
     "minimum-stability": "dev"
 }
