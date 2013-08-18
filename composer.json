@@ -1,14 +1,22 @@
 {
-    "name": "alphalemon/app-sunshine-theme-bundle",
+    "name": "redkite-cms/sunshine-theme-bundle",
     "description": "An awesome RedKiteCms CMS app theme",
-    "keywords": ["alphalemon", "cms", "app"],
+    "keywords": ["redkite", "cms", "app"],
     "homepage": "http://alphalemon.com",
-    "type": "symfony-bundle",
+    "type": "redkite-cms-app",
     "license": "MIT",
-    "authors": [{
-      "name": "RedKiteCms",
-      "email": "info@alphalemon.com"
-    }],
+    "authors": [
+      {
+        "name": "RedKite Labs",
+        "email": "info@redkite-labs.com"
+      }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://apps.redkite-labs.com/"
+        }
+    ],
     "autoload": {
         "psr-0": { "RedKiteCms\\Theme\\SunshineThemeBundle": ""
         }
