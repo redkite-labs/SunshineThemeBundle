@@ -1,5 +1,8 @@
 {% extends 'SunshineThemeBundle:Theme:Base/base.html.twig' %}
 
+{% use 'SunshineThemeBundle:Slots:slots.html.twig' %}
+
+
 {# BEGIN-EXTERNAL-STYLESHEETS
 @SunshineThemeBundle/Resources/public/css/reset.css
 @SunshineThemeBundle/Resources/public/css/960.css
@@ -16,57 +19,17 @@ END-EXTERNAL-JAVASCRIPTS #}
     <div id="column_1" class="grid_4 alpha">
         <div id="left_sidebar">
             <div id="box_title_1_ext_left_sidebar" class="box_title">
-                {% block box_title_1 %}
-                    {# BEGIN-SLOT
-                    name: box_title_1
-                    repeated: language
-                    htmlContent: |
-                        <h2>Internal menu title</h2>
-                    END-SLOT #}
-                    {{ renderSlot('box_title_1') }}
-                {% endblock %}
+                {{ block('box_title_1') }}
             </div>
             <div id="nav_menu_ext_left_sidebar" class="box_contents">
-                {% block nav_menu_4 %}
-                    {# BEGIN-SLOT
-                        name: nav_menu_4
-                        repeated: language
-                        htmlContent: |
-                            <ul>
-                                <li><a href="#">Internal link 1</a></li>
-                                <li><a href="#">Internal link 2</a></li> 
-                                <li><a href="#">Internal link 3</a></li>
-                            </ul>
-                    END-SLOT #}
-                    {{ renderSlot('nav_menu_4') }}
-                {% endblock %}
+                {{ block('nav_menu_4') }}
             </div>
             <div>
                 <div class="box_title">
-                    {% block box_title_2 %}
-                         {# BEGIN-SLOT
-                            name: box_title_2
-                            repeated: language
-                            htmlContent: |
-                                <h2>Friends</h2>
-                            END-SLOT #}
-                        {{ renderSlot('box_title_2') }}
-                    {% endblock %}
+                    {{ block('box_title_2') }}
                 </div>
                 <div class="box_contents">
-                    {% block friends_box %}
-                        {# BEGIN-SLOT
-                            name: friends_box
-                            repeated: language
-                            htmlContent: |
-                                <ul>
-                                    <li><a href="#">Friend site link 1</a></li>
-                                    <li><a href="#">Friend site link 2</a></li> 
-                                    <li><a href="#">Friend site link 3</a></li>
-                                </ul>
-                        END-SLOT #}
-                        {{ renderSlot('friends_box') }}
-                    {% endblock %}
+                    {{ block('friends_box') }}
                 </div>
             </div>
         </div>
@@ -74,48 +37,17 @@ END-EXTERNAL-JAVASCRIPTS #}
 
     <div id="column_2" class="grid_9">
         <div id="middle_sidebar">
-            {% block middle_sidebar %}
-                {# BEGIN-SLOT
-                    name: middle_sidebar
-                    htmlContent: |
-                        <h1>Main Title</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <h2>Secondary Title</h2>
-                        <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisici elit</a>, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p>
-                        <h3>Paragraph Title</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
-                            <ul>                                
-                                <li><a href="#">Link 1</a></li> 
-                                <li>No link</li>
-                                <li><a href="#">Link 2</a></li>
-                            </ul>
-                        </p>
-                END-SLOT #}
-                {{ renderSlot('middle_sidebar') }}
-            {% endblock %}
+            {{ block('middle_sidebar') }}
         </div>
     </div>
 
     <div id="column_3" class="grid_3 omega">
         <div id="right_sidebar">
             <div id="ads_box">
-                {% block ads_box %}
-                    {# BEGIN-SLOT
-                        name: ads_box
-                        htmlContent: |
-                            <p>Ads box</p>
-                    END-SLOT #}
-                    {{ renderSlot('ads_box') }}
-                {% endblock %}
+                {{ block('ads_box') }}
             </div>
-            <div id="tweets_box" class="box_contents">
-                {# BEGIN-SLOT
-                    name: tweets_box
-                    htmlContent: |
-                        <p>Tweet box</p>
-                END-SLOT #}
-                {{ renderSlot('tweets_box') }}
+            <div id="tweets_box" class="box_contents">                
+                {{ block('tweets_box') }}
             </div>
         </div>
     </div>

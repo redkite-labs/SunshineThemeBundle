@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="sunshine_theme.theme.template.home.slots.box_title_1" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">box_title_1</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<h2>Internal menu title</h2>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.nav_menu_4" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">nav_menu_4</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<ul><li><a href="#">Internal link 1</a></li><li><a href="#">Internal link 2</a></li><li><a href="#">Internal link 3</a></li></ul>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.box_title_2" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">box_title_2</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<h2>Friends</h2>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.friends_box" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">friends_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<ul><li><a href="#">Friend site link 1</a></li><li><a href="#">Friend site link 2</a></li><li><a href="#">Friend site link 3</a></li></ul>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.middle_sidebar" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">middle_sidebar</argument>
+            <argument type="collection" >
+                <argument key="htmlContent">
+                    <![CDATA[<h1>Main Title</h1><p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h2>Secondary Title</h2><p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisici elit</a>, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p><h3>Paragraph Title</h3><p>
+    Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
+    <ul><li><a href="#">Link 1</a></li><li>No link</li><li><a href="#">Link 2</a></li></ul></p>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.ads_box" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">ads_box</argument>
+            <argument type="collection" >
+                <argument key="htmlContent">
+                    <![CDATA[<p>Ads box</p>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.tweets_box" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">tweets_box</argument>
+            <argument type="collection" >
+                <argument key="htmlContent">
+                    <![CDATA[<p>Tweet box</p>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.feedback_box" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">feedback_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<a href="https://twitter.com/alphalemon"></a>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.logo" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">logo</argument>
+            <argument type="collection" >
+                <argument key="repeated">site</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<h1>Company Name</h1>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.search_box" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">search_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[Search <input type="text" value="type here your text" /><button/>Search</button>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.nav_menu" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">nav_menu</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<ul><li><a href="#">Home</a></li><li><a href="#">About</a></li><li><a href="#">Contacts</a></li></ul>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.screenshots_box" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">screenshots_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<img src="/bundles/sunshinetheme/css/images/screenshot.png" />]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.slogan_title" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">slogan_title</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<h1>My awesome company</h1>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.slogan_box" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">slogan_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.download_box" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">download_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<img src="/bundles/sunshinetheme/css/images/download.png" />]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.nav_menu_2" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">nav_menu_2</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<h2>Navigation</h2><ul><li><a href="#">Link 1</a></li><li><a href="#">Link 2</a></li><li><a href="#">Link 3</a></li></ul>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.nav_menu_3" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">nav_menu_3</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<h2>Friends</h2><ul><li><a href="#">Link 1</a></li><li><a href="#">Link 2</a></li><li><a href="#">Link 3</a></li></ul>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.social_box" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">social_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">language</argument>
+                <argument key="htmlContent">
+                    <![CDATA[<h2>Social</h2><ul><li><a href="#">Twitter</a></li><li><a href="#">Facebook</a></li><li><a href="#">Linked-in</a></li></ul>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.copyright_box" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">copyright_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">site</argument>
+                <argument key="htmlContent">
+                    <![CDATA[Copyright 2012 myCompany]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.stats_box" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">stats_box</argument>
+            <argument type="collection" >
+                <argument key="repeated">site</argument>
+                <argument key="htmlContent">
+                    <![CDATA[Stats box]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.left_sidebar" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">left_sidebar</argument>
+            <argument type="collection" >
+                <argument key="htmlContent">
+                    <![CDATA[<h1>Title 1</h1><p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.right_sidebar" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">right_sidebar</argument>
+            <argument type="collection" >
+                <argument key="htmlContent">
+                    <![CDATA[<h1>Title 2</h1><p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+        <service id="sunshine_theme.theme.template.home.slots.screencast_sidebar" class="%red_kite_labs_theme_engine.slot.class%" public="false">
+            <argument type="string">screencast_sidebar</argument>
+            <argument type="collection" >
+                <argument key="htmlContent">
+                    <![CDATA[<h1>Main Title</h1><p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><h2>Secondary Title</h2><p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisici elit</a>, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. </p><h3>Paragraph Title</h3><p>
+    Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. 
+    <ul><li><a href="#">Link 1</a></li><li>No link</li><li><a href="#">Link 2</a></li></ul></p>]]>
+                </argument>
+            </argument>
+            <tag name="sunshine_theme.theme.template.slot" />
+        </service>
+    </services>
+</container>

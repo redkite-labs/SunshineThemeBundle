@@ -3,39 +3,27 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
+    
+    
     <parameters>
-        <parameter key="sunshine_theme.internal.external_stylesheets" type="collection">
-            <parameter>@SunshineThemeBundle/Resources/public/css/reset.css</parameter>
-            <parameter>@SunshineThemeBundle/Resources/public/css/960.css</parameter>
-            <parameter>@SunshineThemeBundle/Resources/public/css/text.css</parameter>
-            <parameter>@SunshineThemeBundle/Resources/public/css/internal.css</parameter>
-        </parameter>
-        <parameter key="sunshine_theme.internal.external_javascripts" type="collection">
-            <parameter>@RedKiteLabsThemeEngineBundle/Resources/public/js/vendor/jquery/*</parameter>
-            <parameter>@SunshineThemeBundle/Resources/public/js/mb.bgndGallery.js</parameter>
-        </parameter>
-        <parameter key="sunshine_theme.internal.external_stylesheets.cms" type="collection">
+        <parameter key="sunshine_theme.internal.slots" type="collection">
+            <parameter>box_title_1</parameter>
+            <parameter>nav_menu_4</parameter>
+            <parameter>box_title_2</parameter>
+            <parameter>friends_box</parameter>
+            <parameter>middle_sidebar</parameter>
+            <parameter>ads_box</parameter>
+            <parameter>tweets_box</parameter>
         </parameter>
     </parameters>
 
     <services>
-        <service id="sunshine_theme.theme.template_assets.internal" class="%red_kite_labs_theme_engine.template_assets.class%">
-            <call method="setExternalStylesheets">
-                <argument>%sunshine_theme.internal.external_stylesheets%</argument>
-            </call>
-            <call method="setExternalJavascripts">
-                <argument>%sunshine_theme.internal.external_javascripts%</argument>
-            </call>
+        <service id="sunshine_theme.theme.template_assets.internal" class="%red_kite_labs_theme_engine.template_assets.class%" public="false">
         </service>
 
-        <service id="sunshine_theme.theme.template.internal.slots" class="%red_kite_labs_theme_engine.template_slots.class%">
-            <tag name="sunshine_theme.theme.template.internal" />
-        </service>
-
-        <service id="sunshine_theme.theme.template.internal" class="%red_kite_labs_theme_engine.template.class%">
+        <service id="sunshine_theme.theme.template.internal" class="%red_kite_labs_theme_engine.template.class%" public="false">
             <argument type="service" id="kernel" />
             <argument type="service" id="sunshine_theme.theme.template_assets.internal" />
-            <argument type="service" id="sunshine_theme.theme.template.internal.slots" />
             <tag name="sunshine_theme.theme.template" />
 
             <call method="setThemeName">
@@ -43,6 +31,9 @@
             </call>
             <call method="setTemplateName">
                 <argument type="string">internal</argument>
+            </call>
+            <call method="setSlots">
+                <argument>%sunshine_theme.internal.slots%</argument>
             </call>
         </service>
     </services>
